@@ -37,23 +37,23 @@ The entire stack runs on Cloudflare's global edge network, eliminating the need 
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│                         CLIENT                                    │
-│                   Cloudflare Pages                                │
-│                 (Next.js / React / Tailwind)                      │
+│                         CLIENT                                   │
+│                   Cloudflare Pages                               │
+│                 (Next.js / React / Tailwind)                     │
 └─────────────────────────┬────────────────────────────────────────┘
                           │ HTTPS
                           ▼
 ┌──────────────────────────────────────────────────────────────────┐
-│                    CLOUDFLARE WORKER                              │
-│                   Edge API (TypeScript)                           │
-│                                                                   │
+│                    CLOUDFLARE WORKER                             │
+│                   Edge API (TypeScript)                          │
+│                                                                  |
 │   ┌─────────────────────┐       ┌─────────────────────────┐      │
 │   │                     │       │                         │      │
 │   │    Workers AI       │◄─────►│    Durable Objects      │      │
 │   │    (Llama 3.3)      │       │    (Conversation State) │      │
 │   │                     │       │                         │      │
 │   └─────────────────────┘       └─────────────────────────┘      │
-│                                                                   │
+│                                                                  │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
