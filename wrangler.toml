@@ -1,0 +1,14 @@
+name = "ai-study-assistant"
+main = "src/index.ts"
+compatibility_date = "2024-11-20"
+
+[ai]
+binding = "AI"
+
+[[durable_objects.bindings]]
+name = "CONVERSATIONS"
+class_name = "ConversationDO"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ConversationDO"]
