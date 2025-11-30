@@ -29,6 +29,9 @@ AI Study Assistant is a full-stack application that provides students with an in
 
 The entire stack runs on Cloudflare's global edge network, eliminating the need for traditional server infrastructure while ensuring responses are delivered with minimal latency regardless of the user's geographic location.
 
+##Live Demo
+
+**Application:** [main.ai-study-assistant.pages.dev](https://main.ai-study-assistant.pages.dev)  
 **API Endpoint:** [ai-study-assistant.samirkhan.workers.dev](https://ai-study-assistant.samirkhan.workers.dev)
 
 ---
